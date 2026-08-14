@@ -1,4 +1,43 @@
 /* =========================================================
+   Brand font — The Year of The Camel
+========================================================= */
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-Thin.woff2') format('woff2');
+  font-weight:100; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-ExtraLight.woff2') format('woff2');
+  font-weight:200; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-Light.woff2') format('woff2');
+  font-weight:300; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-Regular.woff2') format('woff2');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-Medium.woff2') format('woff2');
+  font-weight:500; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-Bold.woff2') format('woff2');
+  font-weight:700; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'TYOTC';
+  src:url('../fonts/TheYearOfTheCamel-ExtraBold.woff2') format('woff2');
+  font-weight:800; font-style:normal; font-display:swap;
+}
+
+/* =========================================================
    مدار الجامعيين — Design Tokens & Base
 ========================================================= */
 :root{
@@ -38,7 +77,7 @@
 html{scroll-behavior:smooth;}
 body{
   margin:0;
-  font-family:'IBM Plex Sans Arabic','Tajawal',sans-serif;
+  font-family:'TYOTC','IBM Plex Sans Arabic','Tajawal',sans-serif;
   background:var(--bg);
   color:var(--ink);
   line-height:1.75;
