@@ -119,13 +119,22 @@
 html{scroll-behavior:smooth;}
 body{
   margin:0;
-  font-family:'TYOTC','IBM Plex Sans Arabic','Tajawal',sans-serif;
+  font-family:'IBM Plex Sans Arabic','Tajawal',sans-serif;
   background:var(--bg);
   color:var(--ink);
   line-height:1.75;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
   transition:background-color .4s var(--ease), color .4s var(--ease);
+}
+
+/* Brand display font — reserved for headings & the logo wordmark only;
+   body copy, numbers and buttons stay on the readable font above. */
+h1,h2,h3,h4,
+.logo-mark,
+.section-title,
+.hero h1{
+  font-family:'TYOTC','IBM Plex Sans Arabic','Tajawal',sans-serif;
 }
 img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
