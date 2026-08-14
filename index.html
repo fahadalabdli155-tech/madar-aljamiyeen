@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدار الجامعيين | مجتمع الممارسين والخبراء في برامج الجامعيين</title>
+<meta name="description" content="مدار الجامعيين — مجتمع ممارسة نوعي يجمع الممارسين والخبراء والمهتمين لتطوير برامج الشباب الجامعي في جدة، عبر التعلّم المشترك وتبادل الخبرة وصناعة الأثر المستدام.">
+<meta name="theme-color" content="#0f2049">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f2049'/%3E%3Cellipse cx='50' cy='50' rx='34' ry='22' fill='none' stroke='%23e8a13c' stroke-width='7' transform='rotate(-18 50 50)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">تخطَّ إلى المحتوى</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#hero" class="logo-mark logo--light header-logo" aria-label="مدار الجامعيين">
+      <span class="ring"></span>
+      <span class="l1">مدار</span>
+      <span class="l2">الجامعيين</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="التنقل الرئيسي">
+      <a href="#about">عن المبادرة</a>
+      <a href="#why">لماذا؟</a>
+      <a href="#community">مجتمعنا</a>
+      <a href="#activities">ماذا نقدم</a>
+      <a href="#journey">المسيرة</a>
+      <a href="#impact">الأثر</a>
+      <a href="#team">الفريق</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#join" class="btn btn--gold">
+        <span>انضم للمجتمع</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-mobile" id="navMobile">
+  <div class="nav-mobile-top">
+    <span class="logo-mark logo--light" style="font-size:1.2rem;"><span class="ring"></span><span class="l1">مدار</span><span class="l2">الجامعيين</span></span>
+    <button class="nav-toggle" id="navClose" aria-label="إغلاق القائمة">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="#about">عن المبادرة</a></li>
+    <li><a href="#why">لماذا مدار؟</a></li>
+    <li><a href="#community">مجتمعنا</a></li>
+    <li><a href="#activities">ماذا نقدم</a></li>
+    <li><a href="#journey">المسيرة</a></li>
+    <li><a href="#impact">الأثر والمؤشرات</a></li>
+    <li><a href="#team">الفريق</a></li>
+    <li><a href="#join">انضم إلينا</a></li>
+  </ul>
+  <a href="#join" class="btn btn--gold btn--block">انضم للمجتمع</a>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <canvas id="network-canvas"></canvas>
+  <div class="container">
+    <div class="reveal in">
+      <span class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+        أحد مبادرات خدمة الشباب الجامعي — جدة
+      </span>
+    </div>
+
+    <div class="logo-mark logo--light hero-logo reveal in" style="transition-delay:.05s">
+      <span class="ring"></span>
+      <span class="l1">مدار</span>
+      <span class="l2">الجامعيين</span>
+    </div>
+
+    <h1 class="reveal in" style="transition-delay:.1s">
+      نربط <span class="accent">الممارسين والخبراء</span><br>
+      لصياغة مستقبل برامج الشباب الجامعي
+    </h1>
+
+    <p class="hero-lede reveal in" style="transition-delay:.18s">
+      مجتمع ممارسة نوعي في مدينة جدة، يجمع العاملين والمهتمين ببرامج المرحلة الجامعية
+      تحت مظلة واحدة، للتعلّم المشترك، وتبادل الخبرة، وصناعة أثر يمتد لما بعد اللقاء.
+    </p>
+
+    <div class="hero-actions reveal in" style="transition-delay:.26s">
+      <a href="#join" class="btn btn--gold">
+        انضم للمجتمع
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#about" class="btn btn--ghost">استكشف المبادرة</a>
+    </div>
+
+    <div class="hero-stats reveal in" style="transition-delay:.34s">
+      <div class="hero-stat"><b>+20</b><span>مشارك فاعل مستهدف</span></div>
+      <div class="hero-stat"><b>8</b><span>لقاءات إثرائية</span></div>
+      <div class="hero-stat"><b>2</b><span>ملتقيان نوعيّان</span></div>
+      <div class="hero-stat"><b>12</b><span>شهرًا مسار العمل</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>اكتشف المزيد</span>
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">عن المبادرة</span>
+      <h2 class="section-title">ما هي <em>مدار الجامعيين</em>؟</h2>
+      <p class="section-sub">
+        في كل مرحلة جامعية تُصاغ ملامح شخصية وتُرسم اتجاهات مستقبل. "مدار الجامعيين"
+        وُلدت لخدمة من يقفون خلف هذه الصياغة — الممارسون والخبراء العاملون مع الشباب الجامعي.
+      </p>
+    </div>
+
+    <div class="about-grid reveal-stagger">
+      <div class="about-card reveal" style="--i:0">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>ما هي المبادرة؟</h3>
+        <p>تأسيس مجموعة اهتمام نوعية للعاملين في خدمة الشباب بالمرحلة الجامعية في محافظة جدة، تجمعهم تحت مظلة تعلّم وتطوير مستمر.</p>
+      </div>
+      <div class="about-card reveal" style="--i:1">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>لمن هذا المجتمع؟</h3>
+        <p>للممارسين المباشرين مع الشباب الجامعي، وللخبراء والمهتمين ممن تتقاطع تجربتهم مع احتياجات هذه الفئة، من داخل جدة وخارجها.</p>
+      </div>
+      <div class="about-card reveal" style="--i:2">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h3>لماذا الآن؟</h3>
+        <p>لأن جهود خدمة الشباب الجامعي في جدة متنوعة لكنها متفرقة. "مدار" يجمعها في مسار واحد، يوحّد الرؤية ويوسّع الأثر.</p>
+      </div>
+    </div>
+
+    <div class="about-quote reveal">
+      <p>
+        "المرحلة الجامعية هي نقطة التحوّل الأهم في حياة الشباب؛ فيها تتبلور الشخصية،
+        وتتحدد المسارات. الاستثمار في هذه المرحلة استثمار في مستقبل الأفراد والمجتمع."
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="section section--tight" style="background:var(--gray-100)" id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">مبررات المبادرة</span>
+      <h2 class="section-title">لماذا <em>مدار الجامعيين</em>؟</h2>
+      <p class="section-sub">ثلاث ركائز شكّلت فكرة المبادرة من نقطة البداية.</p>
+    </div>
+
+    <div class="pillars reveal-stagger">
+      <div class="pillar reveal" style="--i:0">
+        <span class="num">01</span>
+        <h3>لماذا مجتمع ممارسة؟</h3>
+        <p>مجموعات الاهتمام خيار مثالي لبناء مجتمعات ممارسة متخصصة بتكلفة منخفضة وانطلاقة سريعة، تحقق تبادل خبرات عملية وتصل إلى رؤى استراتيجية مؤثرة، وتصنع نماذج تطبيقية قابلة للتكرار.</p>
+      </div>
+      <div class="pillar reveal" style="--i:1">
+        <span class="num">02</span>
+        <h3>لماذا المرحلة الجامعية؟</h3>
+        <p>فيها تتبلور الشخصية وتتحدد المسارات المهنية والاجتماعية. الاستثمار في برامجها يخلق آثارًا ممتدة، لأن ما يُبنى فيها يُعد أساسًا لمراحل الحياة اللاحقة.</p>
+      </div>
+      <div class="pillar reveal" style="--i:2">
+        <span class="num">03</span>
+        <h3>لماذا مدينة جدة؟</h3>
+        <p>حراك شبابي متنوع، لكنه يفتقر أحيانًا للتنظيم والتكامل. "مدار" يربط الجهات العاملة، وينسّق الجهود، ويستثمر الموارد المنتشرة لتحقيق أثر أوسع وأكثر استدامة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section class="section" id="community">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">مجتمعنا</span>
+      <h2 class="section-title">من <em>يشكّل</em> مدار الجامعيين؟</h2>
+      <p class="section-sub">فئتان مكمّلتان لبعضهما، يجمعهما اهتمام حقيقي بتطوير برامج المرحلة الجامعية.</p>
+    </div>
+
+    <div class="community-grid reveal-stagger">
+      <div class="member-card reveal" style="--i:0">
+        <div class="avatars"></div>
+        <span class="tag">الفئة الأولى</span>
+        <h3>الممارسون</h3>
+        <p>العاملون بشكل مباشر ومستمر مع المرحلة الجامعية، سواء في المجالات التربوية أو الإرشادية أو التدريبية أو غيرها من الأدوار المرتبطة بخدمة هذه الفئة.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> عمل تربوي وإرشادي مباشر</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> تصميم وتنفيذ برامج تدريبية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> احتكاك يومي مع الشباب الجامعي</li>
+        </ul>
+      </div>
+      <div class="member-card reveal" style="--i:1">
+        <div class="avatars"></div>
+        <span class="tag">الفئة الثانية</span>
+        <h3>الخبراء والمهتمون</h3>
+        <p>أفراد يمتلكون خبرات سابقة أو حالية في العمل مع المرحلة الجامعية، من خلال أدوار متخصصة ومباشرة، أو عبر مجالات تتقاطع مع احتياجات هذه الفئة وتخدمها بشكل غير مباشر.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> خبرة استشارية أو بحثية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> اهتمام معرفي بقضايا الشباب</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> رغبة في المساهمة والأثر</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:52px; margin-bottom:20px;">
+      <span class="eyebrow">معايير الانضمام</span>
+      <h3 style="font-size:1.3rem; font-weight:800; color:var(--navy-900);">من يمكنه الانضمام؟</h3>
+    </div>
+    <div class="criteria-strip reveal">
+      <span class="criteria-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ارتباط فعلي أو سابق بالعمل مع فئة الشباب الجامعي</span>
+      <span class="criteria-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> اهتمام واضح بالتنمية أو التربية أو الإرشاد</span>
+      <span class="criteria-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> استعداد للمشاركة الفاعلة لا الحضور فقط</span>
+      <span class="criteria-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ألا يقل العمر عن 28 عامًا</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITIES ============ -->
+<section class="section section--tight" style="background:var(--gray-100)" id="activities">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">ماذا نقدّم</span>
+      <h2 class="section-title">تجربة <em>تعلّم وتواصل</em> متكاملة</h2>
+      <p class="section-sub">ثلاثة أنشطة متكاملة تصنع إيقاع المجتمع على مدار العام.</p>
+    </div>
+
+    <div class="activities-grid reveal-stagger">
+      <div class="activity-card reveal" style="--i:0">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>اللقاءات الدورية</h3>
+        <p>لقاء لمدة 3 ساعات، يقدّمه أعضاء المجتمع أنفسهم وفق عنوان محدد سلفًا، لتبادل التجربة والمعرفة العملية.</p>
+        <span class="meta">8 لقاءات إثرائية / بواقع 4 لكل دورة</span>
+      </div>
+      <div class="activity-card reveal" style="--i:1">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        </div>
+        <h3>الملتقى النوعي</h3>
+        <p>ملتقى يمتد ليوم كامل، تُقدَّم فيه أطروحات نوعية وتجارب وممارسات من أعضاء المجتمع والضيوف والخبراء.</p>
+        <span class="meta">ملتقيان نوعيّان خلال العام</span>
+      </div>
+      <div class="activity-card reveal" style="--i:2">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <h3>مجموعة التواصل</h3>
+        <p>مساحة رقمية دائمة تجمع أعضاء المجتمع، تُطرح فيها المناقشات، وتتيح مساحة حيّة لتبادل الأفكار بين اللقاءات.</p>
+        <span class="meta">تواصل مستمر بين الأعضاء</span>
+      </div>
+    </div>
+
+    <div class="topics-marquee reveal">
+      <div class="topics-track" id="topicsTrack">
+        <!-- filled by JS (duplicated for seamless loop) -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="section" id="journey">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">مسيرة المبادرة</span>
+      <h2 class="section-title">رحلة <em>مدار</em> على مدار عام كامل</h2>
+      <p class="section-sub">خمس محطات تأخذ المجتمع من التأسيس إلى الأثر الموثّق.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="timeline-dot">١</span>
+        <div class="timeline-card">
+          <span class="phase-tag">المرحلة الأولى</span>
+          <h3>التأسيس</h3>
+          <p>بناء وثيقة المبادرة، وتحديد قائمة المشاركين المؤسِّسين وفق معايير الانضمام.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-dot">٢</span>
+        <div class="timeline-card">
+          <span class="phase-tag">المرحلة الثانية</span>
+          <h3>إطلاق المجتمع</h3>
+          <p>الإعلان الرسمي عن "مدار الجامعيين" وانطلاق أول تجمّع لأعضائه.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-dot">٣</span>
+        <div class="timeline-card">
+          <span class="phase-tag">المرحلة الثالثة</span>
+          <h3>الدورة الأولى</h3>
+          <p>تنفيذ 4 لقاءات دورية وملتقى نوعي واحد، لبناء زخم التعلّم المشترك.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-dot">٤</span>
+        <div class="timeline-card">
+          <span class="phase-tag">المرحلة الرابعة</span>
+          <h3>الدورة الثانية</h3>
+          <p>4 لقاءات إضافية وملتقى نوعي ثانٍ، لتعميق الأثر واتساع دائرة المشاركة.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-dot">٥</span>
+        <div class="timeline-card">
+          <span class="phase-tag">المرحلة الخامسة</span>
+          <h3>التقييم والإغلاق</h3>
+          <p>توثيق النتائج، وإصدار السجل المعرفي والتقرير الختامي للمبادرة.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-scope reveal">
+      <span class="scope-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        مدينة جدة
+      </span>
+      <span class="scope-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        12 شهرًا
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMPACT ============ -->
+<section class="section section--dark" id="impact">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" style="color:var(--gold-400); background:rgba(232,161,60,.12); border-color:rgba(232,161,60,.3)">الأثر والمخرجات</span>
+      <h2 class="section-title">أثر <em>يتّسع</em> مع الزمن</h2>
+      <p class="section-sub">من التعارف الأول إلى تأسيس كيانات متخصصة — هكذا يتدرّج أثر "مدار".</p>
+    </div>
+
+    <div class="impact-grid reveal-stagger">
+      <div class="impact-card reveal" style="--i:0">
+        <span class="n">قريب</span>
+        <h3>المدى القريب</h3>
+        <p>جمع المهتمين، وتبادل الخبرات، والتعارف بين العاملين والتعرّف على الجهود القائمة.</p>
+      </div>
+      <div class="impact-card reveal" style="--i:1">
+        <span class="n">متوسط</span>
+        <h3>المدى المتوسط</h3>
+        <p>تنسيق وتعاون بين الأعضاء، وإجراء دراسات وأبحاث، وإطلاق مشاريع مشتركة.</p>
+      </div>
+      <div class="impact-card reveal" style="--i:2">
+        <span class="n">بعيد</span>
+        <h3>المدى البعيد</h3>
+        <p>تأسيس كيانات متخصصة، وإطلاق مشاريع تشاركية، وتوحيد الجهود في خدمة الفئة.</p>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard mt-lg reveal" id="indicators">
+      <div class="dashboard-inner">
+        <div class="dashboard-top">
+          <h3>مؤشرات المخرجات المستهدفة</h3>
+          <span class="live-pill"><span class="dot"></span> مجتمع في نمو مستمر</span>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-tile">
+            <b data-count="2">0</b>
+            <span>دورتان متكاملتان</span>
+            <div class="stat-bar"><i data-fill="100"></i></div>
+          </div>
+          <div class="stat-tile">
+            <b data-count="8">0</b>
+            <span>لقاءات إثرائية</span>
+            <div class="stat-bar"><i data-fill="100"></i></div>
+          </div>
+          <div class="stat-tile">
+            <b data-count="2">0</b>
+            <span>ملتقيات نوعية</span>
+            <div class="stat-bar"><i data-fill="100"></i></div>
+          </div>
+          <div class="stat-tile">
+            <b data-count="20" data-suffix="+">0</b>
+            <span>مشاركون فاعلون</span>
+            <div class="stat-bar"><i data-fill="80"></i></div>
+          </div>
+          <div class="stat-tile">
+            <b data-count="1">0</b>
+            <span>سجل معرفي شامل</span>
+            <div class="stat-bar"><i data-fill="100"></i></div>
+          </div>
+          <div class="stat-tile">
+            <b data-count="1">0</b>
+            <span>تقرير ختامي موثّق</span>
+            <div class="stat-bar"><i data-fill="100"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:56px; margin-bottom:16px;">
+      <h3 style="font-size:1.15rem; font-weight:800; color:var(--white);">كيف نقيس النجاح؟</h3>
+    </div>
+    <div class="chip-row reveal">
+      <span class="criteria-chip">عدد المسجّلين في المجتمع</span>
+      <span class="criteria-chip">متوسط الحضور في اللقاءات</span>
+      <span class="criteria-chip">نسبة الالتزام بالحضور</span>
+      <span class="criteria-chip">رضا المشاركين عن الفعاليات</span>
+      <span class="criteria-chip">مساهمات الأعضاء في التصميم والتنفيذ</span>
+      <span class="criteria-chip">مبادرات وتعاونات نتجت عن المجتمع</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ECOSYSTEM NETWORK ============ -->
+<section class="section" id="ecosystem">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">شبكة الأثر</span>
+      <h2 class="section-title">منظومة <em>مترابطة</em> من الفاعلين</h2>
+      <p class="section-sub">ممارسون، خبراء، جهات، ومشاريع — تتقاطع جهودهم داخل مدار واحد.</p>
+    </div>
+    <div class="ecosystem-wrap reveal">
+      <canvas id="ecosystem-canvas"></canvas>
+    </div>
+    <div class="ecosystem-legend reveal">
+      <span class="legend-chip"><span class="legend-dot" style="background:#e8a13c"></span> ممارسون</span>
+      <span class="legend-chip"><span class="legend-dot" style="background:#6fb7ff"></span> خبراء ومهتمون</span>
+      <span class="legend-chip"><span class="legend-dot" style="background:#8ff0b0"></span> جهات وبرامج</span>
+      <span class="legend-chip"><span class="legend-dot" style="background:#ffffff"></span> مشاريع مشتركة</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KNOWLEDGE / EVENTS (future readiness) ============ -->
+<section class="section section--tight" style="background:var(--gray-100)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">قريبًا في مدار</span>
+      <h2 class="section-title">مساحات <em>قادمة</em> للنمو والتوسّع</h2>
+      <p class="section-sub">نبني "مدار" ليكون منصة مجتمعية متكاملة، تتّسع تدريجيًا لاستيعاب هذه المساحات.</p>
+    </div>
+
+    <div class="split-2 reveal-stagger">
+      <div class="feature-card reveal" style="--i:0">
+        <span class="soon">قريبًا</span>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </div>
+        <h3>مركز المعرفة</h3>
+        <p>مكتبة رقمية تجمع مخرجات المجتمع من مقالات وأوراق وتجارب موثّقة.</p>
+        <ul>
+          <li>مقالات وأوراق تخصصية</li>
+          <li>دراسات وأبحاث حول المرحلة</li>
+          <li>تجارب وممارسات موثّقة</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal" style="--i:1">
+        <span class="soon">قريبًا</span>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        </div>
+        <h3>نظام الفعاليات</h3>
+        <p>تقويم تفاعلي يجمع اللقاءات والملتقيات القادمة، مع أرشيف الفعاليات السابقة.</p>
+        <ul>
+          <li>فعاليات قادمة وتسجيل مباشر</li>
+          <li>تفاصيل كل لقاء وملتقى</li>
+          <li>أرشيف موثّق للأنشطة السابقة</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="criteria-strip reveal" style="margin-top:36px; justify-content:center;">
+      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">حسابات أعضاء</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">ملفات مهنية</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">مجتمع خاص بالأعضاء</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">مساحات تعاون مشتركة</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">فريق العمل</span>
+      <h2 class="section-title">من <em>يقود</em> مدار الجامعيين؟</h2>
+      <p class="section-sub">فريق صغير بخبرة ممتدة، يؤمن بأثر المجتمعات النوعية.</p>
+    </div>
+
+    <div class="team-grid reveal-stagger" style="max-width:680px; margin-inline:auto;">
+      <div class="team-card reveal" style="--i:0">
+        <div class="team-avatar">ر.ع</div>
+        <h3>م. راشد عليان</h3>
+        <span class="role">ميسّر المجتمع</span>
+        <p>خبرة تتجاوز 10 سنوات في العمل مع فئة المرحلة الجامعية، مع اهتمام بتطوير قضايا الشباب وتصميم المبادرات والبرامج الشبابية، إضافة إلى خبرة في الاستشارات والتخطيط للمشاريع المجتمعية.</p>
+      </div>
+      <div class="team-card reveal" style="--i:1">
+        <div class="team-avatar">م.س</div>
+        <h3>أ. محمد سندابي</h3>
+        <span class="role">منسّق المجتمع</span>
+        <p>مهتم بالعمل التربوي، ومشارك في عدد من المشاريع الشبابية، يقود التنسيق التنفيذي لأنشطة المجتمع ولقاءاته.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN / CTA ============ -->
+<section class="section" id="join">
+  <div class="container">
+    <div class="join-section reveal">
+      <div class="join-grid">
+        <div class="join-text">
+          <span class="eyebrow" style="background:rgba(255,255,255,.1); color:var(--gold-300); border-color:rgba(255,255,255,.2)">انضم إلينا</span>
+          <h2>كن جزءًا من مجتمع يشكّل مستقبل برامج الشباب الجامعي</h2>
+          <p>سواء كنت ممارسًا مباشرًا أو خبيرًا مهتمًا، مكانك في "مدار" محجوز. عبّر عن اهتمامك وسنعود إليك.</p>
+          <div class="join-actions">
+            <a href="#joinForm" class="btn btn--gold">
+              سجّل اهتمامك
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="tel:0569869692" class="btn btn--ghost">تواصل هاتفيًا</a>
+          </div>
+          <div class="join-contact">
+            <a href="tel:0569869692">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              0569869692 — م. راشد عليان
+            </a>
+          </div>
+        </div>
+
+        <form class="join-form" id="joinForm">
+          <h3>سجّل اهتمامك بالانضمام</h3>
+          <p class="small">سيتم التواصل معك من قبل فريق المجتمع بعد مراجعة معايير الانضمام.</p>
+
+          <div id="formFields">
+            <div class="field">
+              <label for="fname">الاسم الكامل</label>
+              <input type="text" id="fname" name="fname" placeholder="اسمك الكامل" required>
+            </div>
+            <div class="field">
+              <label for="fphone">رقم الجوال</label>
+              <input type="tel" id="fphone" name="fphone" placeholder="05xxxxxxxx" required>
+            </div>
+            <div class="field">
+              <label for="fcategory">أنتمي إلى</label>
+              <select id="fcategory" name="fcategory" required>
+                <option value="">اختر الفئة</option>
+                <option value="practitioner">ممارس مباشر</option>
+                <option value="expert">خبير / مهتم</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fnote">نبذة مختصرة عن ارتباطك بالمرحلة الجامعية</label>
+              <textarea id="fnote" name="fnote" rows="3" placeholder="اكتب نبذة مختصرة..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--block">إرسال طلب الانضمام</button>
+            <p class="form-note">لن يتم مشاركة بياناتك مع أي جهة خارجية.</p>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            <h4>تم استلام طلبك بنجاح</h4>
+            <p>سيتواصل معك فريق "مدار الجامعيين" قريبًا. شكرًا لاهتمامك بالانضمام.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-mark logo--light"><span class="ring"></span><span class="l1">مدار</span><span class="l2">الجامعيين</span></span>
+        <p>مجتمع الممارسين في برامج الجامعيين — رسالتنا التأثير من خلال شبكات الفاعلين في البرامج الجامعية، ورؤيتنا أن نكون مجتمعًا رائدًا متخصصًا في هذا المجال.</p>
+        <div class="footer-social">
+          <a href="tel:0569869692" aria-label="اتصال"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+          <a href="#" aria-label="تويتر"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.8.3-1.6.6-2.4.7.9-.5 1.5-1.4 1.8-2.4-.8.5-1.7.8-2.7 1-1.6-1.7-4.3-1.7-6 0-.8.8-1.3 2-1.2 3.1-3.1-.2-5.9-1.6-7.7-4-1 1.7-.5 3.9 1.1 5-.7 0-1.4-.2-2-.5v.1c0 1.8 1.3 3.3 3 3.6-.5.2-1.1.2-1.7.1.5 1.5 1.9 2.6 3.6 2.6-1.4 1.1-3.1 1.6-4.9 1.4 1.7 1.1 3.7 1.7 5.7 1.7 6.9 0 10.6-5.7 10.6-10.6v-.5c.8-.5 1.4-1.2 1.9-2z"/></svg></a>
+          <a href="#" aria-label="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#about">عن المبادرة</a></li>
+          <li><a href="#community">مجتمعنا</a></li>
+          <li><a href="#journey">المسيرة</a></li>
+          <li><a href="#impact">الأثر والمؤشرات</a></li>
+          <li><a href="#team">الفريق</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><a href="tel:0569869692">0569869692</a></li>
+          <li><a href="#">مدينة جدة، المملكة العربية السعودية</a></li>
+          <li><a href="#join">سجّل اهتمامك بالانضمام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 مدار الجامعيين. جميع الحقوق محفوظة.</span>
+      <span>أحد مبادرات خدمة الشباب الجامعي</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
