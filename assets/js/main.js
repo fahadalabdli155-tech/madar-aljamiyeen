@@ -1,6 +1,28 @@
 (function(){
   "use strict";
 
+  /* ---------- Theme toggle (dark / light) ---------- */
+  var root = document.documentElement;
+  function currentTheme(){
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  }
+  function setTheme(theme){
+    root.setAttribute('data-theme', theme);
+    try{ localStorage.setItem('madar-theme', theme); }catch(e){}
+    var pressed = theme === 'dark';
+    [themeToggle, themeToggleMobile].forEach(function(btn){
+      if(btn) btn.setAttribute('aria-pressed', String(pressed));
+    });
+  }
+  function toggleTheme(){
+    setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+  }
+  var themeToggle = document.getElementById('themeToggle');
+  var themeToggleMobile = document.getElementById('themeToggleMobile');
+  if(themeToggle) themeToggle.addEventListener('click', toggleTheme);
+  if(themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+  setTheme(currentTheme());
+
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById('siteHeader');
   function onScroll(){

@@ -11,6 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<script>
+(function(){
+  try{
+    var saved = localStorage.getItem('madar-theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link">تخطَّ إلى المحتوى</a>
@@ -34,6 +43,10 @@
     </nav>
 
     <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0111 3a8.5 8.5 0 108.998 11.5z"/></svg>
+      </button>
       <a href="#join" class="btn btn--gold">
         <span class="btn-full">انضم للمجتمع</span>
         <span class="btn-short">انضم</span>
@@ -49,9 +62,15 @@
 <div class="nav-mobile" id="navMobile">
   <div class="nav-mobile-top">
     <span class="logo-mark logo--light" style="font-size:1.2rem;"><span class="ring"></span><span class="l1">مدار</span><span class="l2">الجامعيين</span></span>
-    <button class="nav-toggle" id="navClose" aria-label="إغلاق القائمة">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-    </button>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="theme-toggle" id="themeToggleMobile" aria-label="تبديل الوضع الليلي" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0111 3a8.5 8.5 0 108.998 11.5z"/></svg>
+      </button>
+      <button class="nav-toggle" id="navClose" aria-label="إغلاق القائمة">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+    </div>
   </div>
   <ul>
     <li><a href="#about">عن المبادرة</a></li>
@@ -226,7 +245,7 @@
 
     <div class="section-head" style="margin-top:52px; margin-bottom:20px;">
       <span class="eyebrow">معايير الانضمام</span>
-      <h3 style="font-size:1.3rem; font-weight:800; color:var(--navy-900);">من يمكنه الانضمام؟</h3>
+      <h3 style="font-size:1.3rem; font-weight:800; color:var(--heading);">من يمكنه الانضمام؟</h3>
     </div>
     <div class="criteria-strip reveal">
       <span class="criteria-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ارتباط فعلي أو سابق بالعمل مع فئة الشباب الجامعي</span>
@@ -423,10 +442,10 @@
     </div>
 
     <div class="criteria-strip reveal" style="margin-top:36px; justify-content:center;">
-      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">حسابات أعضاء</span>
-      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">ملفات مهنية</span>
-      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">مجتمع خاص بالأعضاء</span>
-      <span class="criteria-chip" style="background:var(--white); color:var(--navy-900); border:1px solid var(--gray-200);">مساحات تعاون مشتركة</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--heading); border:1px solid var(--gray-200);">حسابات أعضاء</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--heading); border:1px solid var(--gray-200);">ملفات مهنية</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--heading); border:1px solid var(--gray-200);">مجتمع خاص بالأعضاء</span>
+      <span class="criteria-chip" style="background:var(--white); color:var(--heading); border:1px solid var(--gray-200);">مساحات تعاون مشتركة</span>
     </div>
   </div>
 </section>
