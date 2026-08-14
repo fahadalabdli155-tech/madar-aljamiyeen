@@ -335,13 +335,21 @@ h1,h2,h3,h4,p{margin:0;}
     background:var(--gold-400);
   }
 }
-.header-actions{ display:flex; align-items:center; gap:12px; }
+.site-header .container{ min-width:0; }
+.header-logo{ flex-shrink:0; }
+.header-actions{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .header-actions .btn{ padding:12px 22px; font-size:.88rem; }
 .header-actions .btn-short{ display:none; }
 @media(max-width:640px){
-  .header-actions .btn{ padding:12px 18px; }
+  .header-actions{ gap:8px; }
+  .header-actions .btn{ padding:11px 16px; }
   .header-actions .btn-full{ display:none; }
   .header-actions .btn-short{ display:inline; }
+  /* the mobile nav drawer has its own theme toggle; no need for two */
+  .header-actions .theme-toggle{ display:none; }
+}
+@media(max-width:360px){
+  .header-logo{ font-size:.92rem; }
 }
 
 .nav-toggle{
