@@ -123,18 +123,6 @@
     track.innerHTML = html;
   }
 
-  /* ---------- Join form (client-side demo) ---------- */
-  var joinForm = document.getElementById('joinForm');
-  if(joinForm){
-    joinForm.addEventListener('submit', function(e){
-      e.preventDefault();
-      var fields = document.getElementById('formFields');
-      var success = document.getElementById('formSuccess');
-      fields.style.display = 'none';
-      success.classList.add('show');
-    });
-  }
-
   /* ---------- Hero network canvas ---------- */
   (function heroNetwork(){
     var canvas = document.getElementById('network-canvas');
