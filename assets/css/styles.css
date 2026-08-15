@@ -342,11 +342,12 @@ h1,h2,h3,h4,p{margin:0;}
 .header-actions .btn-short{ display:none; }
 @media(max-width:640px){
   .header-actions{ gap:8px; }
-  .header-actions .btn{ padding:11px 16px; }
+  .header-actions .btn{ padding:9px 14px; font-size:.82rem; box-shadow:none; }
   .header-actions .btn-full{ display:none; }
   .header-actions .btn-short{ display:inline; }
   /* the mobile nav drawer has its own theme toggle; no need for two */
   .header-actions .theme-toggle{ display:none; }
+  .header-logo .ring{ display:none; }
 }
 @media(max-width:360px){
   .header-logo{ font-size:.92rem; }
@@ -391,9 +392,16 @@ h1,h2,h3,h4,p{margin:0;}
   flex-direction:column;
   padding:24px;
   transform:translateY(-100%);
-  transition:transform .45s var(--ease);
+  transition:transform .45s var(--ease), visibility 0s linear .45s;
+  visibility:hidden;
+  pointer-events:none;
 }
-.nav-mobile.open{ transform:translateY(0); }
+.nav-mobile.open{
+  transform:translateY(0);
+  visibility:visible;
+  pointer-events:auto;
+  transition:transform .45s var(--ease), visibility 0s linear 0s;
+}
 .nav-mobile-top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:40px; }
 .nav-mobile ul{ display:flex; flex-direction:column; gap:6px; }
 .nav-mobile a{
