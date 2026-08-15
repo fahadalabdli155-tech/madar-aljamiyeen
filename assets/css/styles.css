@@ -502,36 +502,6 @@ h1,h2,h3,h4,p{margin:0;}
   font-size:.86rem;
   color:#9aa5c1;
 }
-.scroll-hint{
-  position:absolute;
-  bottom:28px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:10px;
-  color:#8b96b6;
-  font-size:.76rem;
-  z-index:2;
-}
-@media(max-width:768px){
-  .scroll-hint{ display:none; }
-}
-@media(max-height:760px){
-  .scroll-hint{ display:none; }
-}
-.scroll-hint .line{
-  width:1px; height:38px;
-  background:linear-gradient(var(--gold-400),transparent);
-  animation:scrollline 1.8s infinite var(--ease);
-}
-@keyframes scrollline{
-  0%{ transform:scaleY(0); transform-origin:top; }
-  50%{ transform:scaleY(1); transform-origin:top; }
-  50.01%{ transform-origin:bottom; }
-  100%{ transform:scaleY(0); transform-origin:bottom; }
-}
 
 /* =========================================================
    Reveal animation
@@ -1309,9 +1279,12 @@ h1,h2,h3,h4,p{margin:0;}
   0%,100%{ transform:scale(1) rotate(0); opacity:.85; }
   50%{ transform:scale(1.22) rotate(18deg); opacity:1; }
 }
+/* Stays display:block (set above) so the figure keeps its own line —
+   an inline-block here collapses it onto the label beside it. */
 .hero-stat b{
   transition:transform .45s var(--ease), color .45s var(--ease);
-  display:inline-block;
+  transform-origin:right;
+  width:fit-content;
 }
 .hero-stat:hover b{ transform:translateY(-4px) scale(1.06); color:var(--gold-400); }
 
