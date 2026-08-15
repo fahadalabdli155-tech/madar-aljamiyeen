@@ -518,6 +518,9 @@ h1,h2,h3,h4,p{margin:0;}
 @media(max-width:768px){
   .scroll-hint{ display:none; }
 }
+@media(max-height:760px){
+  .scroll-hint{ display:none; }
+}
 .scroll-hint .line{
   width:1px; height:38px;
   background:linear-gradient(var(--gold-400),transparent);
